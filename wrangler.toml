@@ -1,3 +1,11 @@
 name = "sveltia-cms-auth"
 main = "src/index.js"
 compatibility_date = "2023-03-24"
+
+# Plain-text configuration. GITHUB_CLIENT_SECRET is NOT here: it is a Cloudflare
+# Secret set in the dashboard (Settings → Variables and Secrets), which a deploy
+# leaves untouched. Anything listed here is what a deploy from this repo sets;
+# a variable that exists only in the dashboard would be removed on the next deploy.
+[vars]
+GITHUB_CLIENT_ID = "Ov23liHvkaJlD5dQIVOy"
+ALLOWED_DOMAINS = "motodynamicsgr.summer-queen-432f.workers.dev"
